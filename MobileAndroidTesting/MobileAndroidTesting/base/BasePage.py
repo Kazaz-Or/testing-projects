@@ -1,3 +1,4 @@
+import time
 from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -77,3 +78,13 @@ class BasePage:
         except:
             log.error(f"Element {locator_value} is not displayed")
             return False
+
+    def screenshot(self, screenshot_name):
+        file_name = screenshot_name + "_" + (time.strftime("%d_%m_%y_%H_%M_%S")) + ".png"
+        screenshot_directory = "../screenshots/"
+        screenshot_path = screenshot_directory + file_name
+        try:
+            self.driver.save_screenshot(screenshot_path)
+            log.info(f"Screen shot saved to {screenshot_path}")
+        except:
+            log.error("Failed to create a screen shot")
