@@ -55,8 +55,9 @@ class BasePage:
             element = self.wait_for_element(locator_value, locator_type)
             element.click()
             log.info(f"Clicked on element {locator_value}")
-        except:
+        except Exception as e:
             log.error(f"Element {locator_value} is not clickable")
+            raise e
         return element
 
     def send_text(self, locator_value, locator_type, text):
