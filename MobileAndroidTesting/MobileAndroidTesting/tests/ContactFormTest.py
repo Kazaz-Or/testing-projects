@@ -1,34 +1,31 @@
-import time
+import unittest
+import pytest
 
-from MobileAndroidTesting.base.DriverClass import Driver
-import MobileAndroidTesting.utilities.CustomLogger as log
-from MobileAndroidTesting.base.BasePage import BasePage
+from MobileAndroidTesting.pages.ContactForm import ContactForm
 
-driver1 = Driver()
-log = log.custom_logger()
 
-driver = driver1.get_driver_method()
+@pytest.mark.usefixtures("pre_run")
+class ContactFormTest(unittest.TestCase):
 
-base_page = BasePage(driver)
-log.info("Launching Application")
+    @pytest.fixture(autouse=True)
+    def object(self):
+        self.contact_form = ContactForm(self.driver)
 
-base_page.is_displayed("com.code2lead.kwad:id/ContactUs", "id")
-base_page.click_element("com.code2lead.kwad:id/ContactUs", "id")
-base_page.screenshot("ContactUsPage")
+    @pytest.mark.run(order=1)
+    def test_open_contact_form(self):
+        self.contact_form.click_contact_form_button()
+        self.contact_form.verify_contact_page()
 
-base_page.is_displayed("com.code2lead.kwad:id/Et2", "id")
-base_page.send_text("com.code2lead.kwad:id/Et2", "id", "Name")
-base_page.is_displayed("com.code2lead.kwad:id/Et3", "id")
-base_page.send_text("com.code2lead.kwad:id/Et3", "id", "myemail@blabla.com")
-base_page.is_displayed("com.code2lead.kwad:id/Et6", "id")
-base_page.send_text("com.code2lead.kwad:id/Et6", "id", "Givatayim Rocks, IL")
-base_page.is_displayed("com.code2lead.kwad:id/Et7", "id")
-base_page.send_text("com.code2lead.kwad:id/Et7", "id", "050-555587")
-base_page.is_displayed("com.code2lead.kwad:id/Btn2", "id")
-base_page.screenshot("ContactUsPage_WithText")
+    @pytest.mark.run(order=2)
+    def test_enter_data_in_from(self):
+        self.contact_form.enter_name_field()
+        self.contact_form.enter_email_field()
+        self.contact_form.enter_email_field()
+        self.contact_form.enter_address_field()
+        self.contact_form.enter_mobile_number_field()
 
-base_page.click_element("com.code2lead.kwad:id/Btn2", "id")
-base_page.screenshot("ContactUs_AfterSubmit")
+    @pytest.mark.run(order=3)
+    def test_submit_data(self):
+        self.contact_form.click_submit_button()
+        self.contact_form.filled_page_screenshot()
 
-time.sleep(4)
-driver.quit()
