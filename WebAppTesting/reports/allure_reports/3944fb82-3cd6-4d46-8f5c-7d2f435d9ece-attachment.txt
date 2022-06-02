@@ -1,0 +1,30 @@
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:58904/session/1e446ec0597703a60b99353bc7dbc53a/element {"using": "link text", "value": "Locators"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:58904 "POST /session/1e446ec0597703a60b99353bc7dbc53a/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: Locators, while using locator type: link text
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:58904/session/1e446ec0597703a60b99353bc7dbc53a/element/845b61ed-65fe-4c6f-93db-4874f16f855d/click {"id": "845b61ed-65fe-4c6f-93db-4874f16f855d"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:58904 "POST /session/1e446ec0597703a60b99353bc7dbc53a/element/845b61ed-65fe-4c6f-93db-4874f16f855d/click HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:82 Clicked on element with locator value: Locators, while using locator type: link
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:58904/session/1e446ec0597703a60b99353bc7dbc53a/window/maximize {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:58904 "POST /session/1e446ec0597703a60b99353bc7dbc53a/window/maximize HTTP/1.1" 200 51
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:58904/session/1e446ec0597703a60b99353bc7dbc53a/element {"using": "css selector", "value": "[id=\"user_input\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:58904 "POST /session/1e446ec0597703a60b99353bc7dbc53a/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: user_input, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:58904/session/1e446ec0597703a60b99353bc7dbc53a/element/0fcba23a-0ae0-490c-aa56-b1a7f03d2de6/value {"text": "Kazi 2", "value": ["K", "a", "z", "i", " ", "2"], "id": "0fcba23a-0ae0-490c-aa56-b1a7f03d2de6"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:58904 "POST /session/1e446ec0597703a60b99353bc7dbc53a/element/0fcba23a-0ae0-490c-aa56-b1a7f03d2de6/value HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:94 Sent Kazi 2 on element with locator value: user_input, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:58904/session/1e446ec0597703a60b99353bc7dbc53a/element {"using": "css selector", "value": "[id=\"submitbutton\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:58904 "POST /session/1e446ec0597703a60b99353bc7dbc53a/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: submitbutton, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:58904/session/1e446ec0597703a60b99353bc7dbc53a/element/b464cb72-1d4f-4a80-8c29-ce922178f252/click {"id": "b464cb72-1d4f-4a80-8c29-ce922178f252"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:58904 "POST /session/1e446ec0597703a60b99353bc7dbc53a/element/b464cb72-1d4f-4a80-8c29-ce922178f252/click HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:82 Clicked on element with locator value: submitbutton, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 DELETE http://127.0.0.1:58904/session/1e446ec0597703a60b99353bc7dbc53a {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:58904 "DELETE /session/1e446ec0597703a60b99353bc7dbc53a HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
