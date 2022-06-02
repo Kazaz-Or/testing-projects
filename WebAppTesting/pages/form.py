@@ -14,7 +14,7 @@ class FormPage(Base):
     _form_page_field_email = "email"
     _form_page_field_gender = "g"
     _form_page_field_technology = "tech"
-    _form_page_field_message = "messag"
+    _form_page_field_message = "message"
     _get_captcha = "captcha_image"
     _form_page_field_captcha = "captcha"
     _post_button = "btnContactUs"
