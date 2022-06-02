@@ -1,0 +1,83 @@
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "link text", "value": "Form"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: Form, while using locator type: link text
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/855c6815-96c5-453c-a4bb-3a379d942b31/click {"id": "855c6815-96c5-453c-a4bb-3a379d942b31"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element/855c6815-96c5-453c-a4bb-3a379d942b31/click HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:82 Clicked on element with locator value: Form, while using locator type: link
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"name\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: name, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/1034c2df-e4a1-4b36-9b92-784ec99013e8/value {"text": "Kazi", "value": ["K", "a", "z", "i"], "id": "1034c2df-e4a1-4b36-9b92-784ec99013e8"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element/1034c2df-e4a1-4b36-9b92-784ec99013e8/value HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:94 Sent Kazi on element with locator value: name, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"email\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: email, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/8893e111-ca5b-41ba-b184-7fe74192de27/value {"text": "kazi@kazi.com", "value": ["k", "a", "z", "i", "@", "k", "a", "z", "i", ".", "c", "o", "m"], "id": "8893e111-ca5b-41ba-b184-7fe74192de27"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element/8893e111-ca5b-41ba-b184-7fe74192de27/value HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:94 Sent kazi@kazi.com on element with locator value: email, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"g\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: g, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/f4c782ce-c918-4d33-8f58-cc07d3bf729a/click {"id": "f4c782ce-c918-4d33-8f58-cc07d3bf729a"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element/f4c782ce-c918-4d33-8f58-cc07d3bf729a/click HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:82 Clicked on element with locator value: g, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"tech\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: tech, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/4731461f-48ae-4c5a-9d47-0ed9df065d1a/value {"text": "Automation Development", "value": ["A", "u", "t", "o", "m", "a", "t", "i", "o", "n", " ", "D", "e", "v", "e", "l", "o", "p", "m", "e", "n", "t"], "id": "4731461f-48ae-4c5a-9d47-0ed9df065d1a"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element/4731461f-48ae-4c5a-9d47-0ed9df065d1a/value HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:94 Sent Automation Development on element with locator value: tech, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"message\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: message, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/415c5e2c-3e36-4f41-9c75-18a2517ba564/value {"text": "Hi there!", "value": ["H", "i", " ", "t", "h", "e", "r", "e", "!"], "id": "415c5e2c-3e36-4f41-9c75-18a2517ba564"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element/415c5e2c-3e36-4f41-9c75-18a2517ba564/value HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:94 Sent Hi there! on element with locator value: message, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"captcha_image\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: captcha_image, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 GET http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/3cdac860-359c-417a-9f7b-140b9f5d29f4/text {"id": "3cdac860-359c-417a-9f7b-140b9f5d29f4"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "GET /session/ee7977111164f3d3ce78d9acd93d5204/element/3cdac860-359c-417a-9f7b-140b9f5d29f4/text HTTP/1.1" 200 18
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:106 Got text SGH456
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"captcha\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: captcha, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/3ef07982-99b9-4b1d-9e5b-6b77c4b4d282/value {"text": "SGH456", "value": ["S", "G", "H", "4", "5", "6"], "id": "3ef07982-99b9-4b1d-9e5b-6b77c4b4d282"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element/3ef07982-99b9-4b1d-9e5b-6b77c4b4d282/value HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:94 Sent SGH456 on element with locator value: captcha, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"btnContactUs\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: btnContactUs, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "0eeba6dc-185c-4ed3-9015-6a5bb4250c3c"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/actions HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:131 Scrolled to element that has locator value: btnContactUs, with locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element {"using": "css selector", "value": "[id=\"btnContactUs\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:68 Element found with locator value: btnContactUs, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204/element/0eeba6dc-185c-4ed3-9015-6a5bb4250c3c/click {"id": "0eeba6dc-185c-4ed3-9015-6a5bb4250c3c"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "POST /session/ee7977111164f3d3ce78d9acd93d5204/element/0eeba6dc-185c-4ed3-9015-6a5bb4250c3c/click HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:base.py:82 Clicked on element with locator value: btnContactUs, while using locator type: id
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 DELETE http://127.0.0.1:55627/session/ee7977111164f3d3ce78d9acd93d5204 {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:55627 "DELETE /session/ee7977111164f3d3ce78d9acd93d5204 HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
