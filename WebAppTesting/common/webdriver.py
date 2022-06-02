@@ -8,10 +8,10 @@ class WebDriver:
     def get_webdriver(self, browser):
         driver = None
         if browser == "chrome":
-            driver = webdriver.Chrome("/Users/kazi/Downloads/chromedriver")
+            driver = webdriver.Chrome(executable_path="/Users/kazi/Downloads/chromedriver")
             self.log.info(f"Launched {browser} browser")
         elif browser == "safari":
-            driver = webdriver.Safari()
+            driver = webdriver.Safari(executable_path="/usr/bin/safaridriver")
             self.log.info(f"Launched {browser} browser")
         elif browser == "firefox":
             driver = webdriver.Firefox(executable_path="/Users/kazi/Downloads/geckodriver")
