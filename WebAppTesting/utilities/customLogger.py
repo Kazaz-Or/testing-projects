@@ -1,5 +1,4 @@
 import logging
-import allure
 
 
 def custom_logger():
@@ -12,7 +11,3 @@ def custom_logger():
     logger.addHandler(file_handler)
     return logger
 
-
-def allure_logs(text):
-    with allure.step(text):
-        pass
