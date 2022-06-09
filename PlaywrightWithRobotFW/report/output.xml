@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20220609 16:41:24.561" rpa="false" schemaversion="3">
+<suite id="s1" name="DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest">
+<suite id="s1-s1" name="DialogTest" source="/Users/kazi/github/automation-projects/PlaywrightWithRobotFW/Tests/DialogTest.robot">
+<kw name="Launch Chromium Browser" library="CommonHelper" type="SETUP">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arg>browser_name=chromium</arg>
+<msg timestamp="20220609 16:41:25.387" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220609 16:41:24.683" endtime="20220609 16:41:25.388"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:24.683" endtime="20220609 16:41:25.388"/>
+</kw>
+<test id="s1-s1-t1" name="Dialog Check Test Case" line="14">
+<kw name="Open Web Application" library="CommonHelper" type="SETUP">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:41:25.390" endtime="20220609 16:41:30.288"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:25.389" endtime="20220609 16:41:30.288"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"This Is Dialog Check Test Case"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:41:30.289" level="INFO">"This Is Dialog Check Test Case"</msg>
+<status status="PASS" starttime="20220609 16:41:30.288" endtime="20220609 16:41:30.289"/>
+</kw>
+<kw name="Menu.Navigate Menu For Alerts" library="PageHelper">
+<arg>'Javascript Alerts'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:30.290" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:30.290" endtime="20220609 16:41:30.290"/>
+</kw>
+<msg timestamp="20220609 16:41:30.290" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:30.289" endtime="20220609 16:41:30.290"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Alerts &amp; Modals'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:41:30.291" endtime="20220609 16:41:32.361"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:30.289" endtime="20220609 16:41:32.361"/>
+</kw>
+<kw name="Dialog.Initialize Dialog Accept" library="PageHelper">
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:32.362" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/javascript-alert-box-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:32.362" endtime="20220609 16:41:32.363"/>
+</kw>
+<msg timestamp="20220609 16:41:32.363" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/javascript-alert-box-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:32.362" endtime="20220609 16:41:32.363"/>
+</kw>
+<kw name="Init Dialog Accept" library="Dialog">
+<arg>${page}</arg>
+<status status="PASS" starttime="20220609 16:41:32.363" endtime="20220609 16:41:32.363"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:32.361" endtime="20220609 16:41:32.363"/>
+</kw>
+<kw name="Dialog.Verify Alert Box Accept" library="PageHelper">
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:32.365" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/javascript-alert-box-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:32.364" endtime="20220609 16:41:32.365"/>
+</kw>
+<msg timestamp="20220609 16:41:32.365" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/javascript-alert-box-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:32.364" endtime="20220609 16:41:32.365"/>
+</kw>
+<kw name="Click For Alert Box" library="Dialog">
+<arg>${page}</arg>
+<msg timestamp="20220609 16:41:33.436" level="INFO">DIALOG TYPE = alert
+DIALOG MESSAGE = I am an alert box!</msg>
+<status status="PASS" starttime="20220609 16:41:32.365" endtime="20220609 16:41:33.436"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:32.364" endtime="20220609 16:41:33.436"/>
+</kw>
+<kw name="Dialog.Verify Confirm Box Accept" library="PageHelper">
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:33.437" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/javascript-alert-box-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:33.437" endtime="20220609 16:41:33.437"/>
+</kw>
+<msg timestamp="20220609 16:41:33.438" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/javascript-alert-box-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:33.437" endtime="20220609 16:41:33.438"/>
+</kw>
+<kw name="Click For Confirm Box" library="Dialog">
+<arg>${page}</arg>
+<msg timestamp="20220609 16:41:34.477" level="INFO">DIALOG TYPE = confirm
+DIALOG MESSAGE = Press a button!</msg>
+<status status="PASS" starttime="20220609 16:41:33.438" endtime="20220609 16:41:34.477"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:33.436" endtime="20220609 16:41:34.478"/>
+</kw>
+<kw name="Dialog.Verify Prompt Box Accept" library="PageHelper">
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:34.479" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/javascript-alert-box-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:34.479" endtime="20220609 16:41:34.479"/>
+</kw>
+<msg timestamp="20220609 16:41:34.479" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/javascript-alert-box-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:34.478" endtime="20220609 16:41:34.479"/>
+</kw>
+<kw name="Set Prompt Message" library="Dialog">
+<arg>'Playwright'</arg>
+<status status="PASS" starttime="20220609 16:41:34.480" endtime="20220609 16:41:34.480"/>
+</kw>
+<kw name="Click For Prompt Box" library="Dialog">
+<arg>${page}</arg>
+<msg timestamp="20220609 16:41:35.510" level="INFO">DIALOG TYPE = prompt
+DIALOG MESSAGE = Please enter your name</msg>
+<status status="PASS" starttime="20220609 16:41:34.480" endtime="20220609 16:41:35.511"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:34.478" endtime="20220609 16:41:35.511"/>
+</kw>
+<kw name="Close Web Application" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:41:35.512" endtime="20220609 16:41:35.526"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:35.511" endtime="20220609 16:41:35.526"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:25.388" endtime="20220609 16:41:35.526"/>
+</test>
+<kw name="Quit Opened Browser" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:41:35.527" endtime="20220609 16:41:35.735"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:35.527" endtime="20220609 16:41:35.736"/>
+</kw>
+<doc>This is Dialog Test file</doc>
+<status status="PASS" starttime="20220609 16:41:24.583" endtime="20220609 16:41:35.736"/>
+</suite>
+<suite id="s1-s2" name="DownloadTest" source="/Users/kazi/github/automation-projects/PlaywrightWithRobotFW/Tests/DownloadTest.robot">
+<kw name="Launch Chromium Browser" library="CommonHelper" type="SETUP">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arg>browser_name=chromium</arg>
+<msg timestamp="20220609 16:41:36.377" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220609 16:41:35.742" endtime="20220609 16:41:36.377"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:35.742" endtime="20220609 16:41:36.387"/>
+</kw>
+<test id="s1-s2-t1" name="Download File Example Test Case" line="14">
+<kw name="Open Web Application" library="CommonHelper" type="SETUP">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:41:36.388" endtime="20220609 16:41:41.321"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:36.388" endtime="20220609 16:41:41.322"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"This is download file example test case"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:41:41.322" level="INFO">"This is download file example test case"</msg>
+<status status="PASS" starttime="20220609 16:41:41.322" endtime="20220609 16:41:41.322"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${text}</var>
+<arg>This is text to enter inside textarea element for the download test case</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220609 16:41:41.323" level="INFO">${text} = This is text to enter inside textarea element for the download test case</msg>
+<status status="PASS" starttime="20220609 16:41:41.323" endtime="20220609 16:41:41.323"/>
+</kw>
+<kw name="Menu.Navigate Menu For Alerts" library="PageHelper">
+<arg>'File Download'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:41.324" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:41.324" endtime="20220609 16:41:41.324"/>
+</kw>
+<msg timestamp="20220609 16:41:41.324" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:41.323" endtime="20220609 16:41:41.324"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Alerts &amp; Modals'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:41:41.325" endtime="20220609 16:41:43.394"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:41.323" endtime="20220609 16:41:43.394"/>
+</kw>
+<kw name="Download.Generate Link And Download File" library="PageHelper">
+<var>${filepath}</var>
+<arg>${text}</arg>
+<arg>TextFile.txt</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:43.396" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/generate-file-to-download-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:43.396" endtime="20220609 16:41:43.396"/>
+</kw>
+<msg timestamp="20220609 16:41:43.396" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/generate-file-to-download-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:43.395" endtime="20220609 16:41:43.396"/>
+</kw>
+<kw name="Enter Data In Textarea" library="FileDownload">
+<arg>${page}</arg>
+<arg>${data_to_enter}</arg>
+<status status="PASS" starttime="20220609 16:41:43.397" endtime="20220609 16:41:45.426"/>
+</kw>
+<kw name="Generate Download Link" library="FileDownload">
+<arg>${page}</arg>
+<status status="PASS" starttime="20220609 16:41:45.426" endtime="20220609 16:41:46.474"/>
+</kw>
+<kw name="Download File" library="FileDownload">
+<var>${path}</var>
+<arg>${page}</arg>
+<arg>${save_file_name}</arg>
+<msg timestamp="20220609 16:41:47.510" level="INFO">${path} = /Users/kazi/github/automation-projects/PlaywrightWithRobotFW/temp/TextFile.txt</msg>
+<status status="PASS" starttime="20220609 16:41:46.475" endtime="20220609 16:41:47.510"/>
+</kw>
+<msg timestamp="20220609 16:41:47.510" level="INFO">${filepath} = /Users/kazi/github/automation-projects/PlaywrightWithRobotFW/temp/TextFile.txt</msg>
+<status status="PASS" starttime="20220609 16:41:43.395" endtime="20220609 16:41:47.510"/>
+</kw>
+<kw name="Check File Content" library="UtilityCore">
+<var>${flag}</var>
+<arg>${filepath}</arg>
+<arg>${text}</arg>
+<msg timestamp="20220609 16:41:47.510" level="INFO">${flag} = True</msg>
+<status status="PASS" starttime="20220609 16:41:47.510" endtime="20220609 16:41:47.510"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${flag}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20220609 16:41:47.511" endtime="20220609 16:41:47.511"/>
+</kw>
+<kw name="Close Web Application" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:41:47.512" endtime="20220609 16:41:47.520"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:47.511" endtime="20220609 16:41:47.521"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:36.387" endtime="20220609 16:41:47.521"/>
+</test>
+<kw name="Quit Opened Browser" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:41:47.522" endtime="20220609 16:41:47.682"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:47.521" endtime="20220609 16:41:47.682"/>
+</kw>
+<doc>This is Table Test file</doc>
+<status status="PASS" starttime="20220609 16:41:35.737" endtime="20220609 16:41:47.682"/>
+</suite>
+<suite id="s1-s3" name="DragTest" source="/Users/kazi/github/automation-projects/PlaywrightWithRobotFW/Tests/DragTest.robot">
+<kw name="Launch Chromium Browser" library="CommonHelper" type="SETUP">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arg>browser_name=chromium</arg>
+<msg timestamp="20220609 16:41:48.338" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220609 16:41:47.689" endtime="20220609 16:41:48.338"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:47.689" endtime="20220609 16:41:48.339"/>
+</kw>
+<test id="s1-s3-t1" name="Drag And Drop Item Test Case" line="14">
+<kw name="Open Web Application" library="CommonHelper" type="SETUP">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:41:48.340" endtime="20220609 16:41:53.074"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:48.340" endtime="20220609 16:41:53.074"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"This Is Drag And Drop Item Test Case"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:41:53.075" level="INFO">"This Is Drag And Drop Item Test Case"</msg>
+<status status="PASS" starttime="20220609 16:41:53.075" endtime="20220609 16:41:53.075"/>
+</kw>
+<kw name="Menu.Navigate Menu For Others" library="PageHelper">
+<arg>'Drag and Drop'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:53.076" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:53.076" endtime="20220609 16:41:53.077"/>
+</kw>
+<msg timestamp="20220609 16:41:53.077" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:53.076" endtime="20220609 16:41:53.077"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Others'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:41:53.077" endtime="20220609 16:41:55.143"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:53.075" endtime="20220609 16:41:55.143"/>
+</kw>
+<kw name="Drag.Drag Ietms and Verify List" library="PageHelper">
+<var>@{item_list}</var>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:41:55.144" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/drag-and-drop-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:55.144" endtime="20220609 16:41:55.144"/>
+</kw>
+<msg timestamp="20220609 16:41:55.145" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/drag-and-drop-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:41:55.144" endtime="20220609 16:41:55.145"/>
+</kw>
+<kw name="Drag Item" library="DragDrop">
+<arg>${page}</arg>
+<arg>1</arg>
+<status status="PASS" starttime="20220609 16:41:55.145" endtime="20220609 16:41:59.236"/>
+</kw>
+<kw name="Drag Item" library="DragDrop">
+<arg>${page}</arg>
+<arg>2</arg>
+<status status="PASS" starttime="20220609 16:41:59.236" endtime="20220609 16:42:03.320"/>
+</kw>
+<kw name="Drag Item" library="DragDrop">
+<arg>${page}</arg>
+<arg>3</arg>
+<status status="PASS" starttime="20220609 16:42:03.320" endtime="20220609 16:42:07.440"/>
+</kw>
+<kw name="Get Dragged Items" library="DragDrop">
+<var>@{dragged_list}</var>
+<arg>${page}</arg>
+<msg timestamp="20220609 16:42:07.463" level="INFO">@{dragged_list} = [ Draggable 1 | Draggable 2 | Draggable 3 ]</msg>
+<status status="PASS" starttime="20220609 16:42:07.440" endtime="20220609 16:42:07.463"/>
+</kw>
+<msg timestamp="20220609 16:42:07.464" level="INFO">@{item_list} = [ Draggable 1 | Draggable 2 | Draggable 3 ]</msg>
+<status status="PASS" starttime="20220609 16:41:55.143" endtime="20220609 16:42:07.464"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${item_list}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:42:07.464" level="INFO">['Draggable 1', 'Draggable 2', 'Draggable 3']</msg>
+<status status="PASS" starttime="20220609 16:42:07.464" endtime="20220609 16:42:07.464"/>
+</kw>
+<kw name="Close Web Application" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:07.465" endtime="20220609 16:42:07.473"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:07.464" endtime="20220609 16:42:07.473"/>
+</kw>
+<status status="PASS" starttime="20220609 16:41:48.339" endtime="20220609 16:42:07.474"/>
+</test>
+<kw name="Quit Opened Browser" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:07.474" endtime="20220609 16:42:07.678"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:07.474" endtime="20220609 16:42:07.678"/>
+</kw>
+<doc>This is Drag Test file</doc>
+<status status="PASS" starttime="20220609 16:41:47.683" endtime="20220609 16:42:07.678"/>
+</suite>
+<suite id="s1-s4" name="FirstTest" source="/Users/kazi/github/automation-projects/PlaywrightWithRobotFW/Tests/FirstTest.robot">
+<kw name="Launch Chromium Browser" library="CommonHelper" type="SETUP">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arg>browser_name=chromium</arg>
+<msg timestamp="20220609 16:42:08.389" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220609 16:42:07.684" endtime="20220609 16:42:08.390"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:07.684" endtime="20220609 16:42:08.390"/>
+</kw>
+<test id="s1-s4-t1" name="My First Test Case" line="13">
+<kw name="Open Web Application" library="CommonHelper" type="SETUP">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:08.391" endtime="20220609 16:42:13.161"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:08.391" endtime="20220609 16:42:13.162"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"This is first test case"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:42:13.162" level="INFO">"This is first test case"</msg>
+<status status="PASS" starttime="20220609 16:42:13.162" endtime="20220609 16:42:13.162"/>
+</kw>
+<kw name="Menu.Navigate Menu For Input Forms" library="PageHelper">
+<arg>'Simple Form Demo'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:13.164" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:13.163" endtime="20220609 16:42:13.164"/>
+</kw>
+<msg timestamp="20220609 16:42:13.164" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:13.163" endtime="20220609 16:42:13.164"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Input Forms'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:42:13.164" endtime="20220609 16:42:15.228"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:13.162" endtime="20220609 16:42:15.229"/>
+</kw>
+<kw name="Close Web Application" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:15.229" endtime="20220609 16:42:15.241"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:15.229" endtime="20220609 16:42:15.241"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:08.390" endtime="20220609 16:42:15.241"/>
+</test>
+<test id="s1-s4-t2" name="My Second Test Case" line="17">
+<kw name="Open Web Application" library="CommonHelper" type="SETUP">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:15.243" endtime="20220609 16:42:16.803"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:15.243" endtime="20220609 16:42:16.803"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"This is second test case"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:42:16.803" level="INFO">"This is second test case"</msg>
+<status status="PASS" starttime="20220609 16:42:16.803" endtime="20220609 16:42:16.803"/>
+</kw>
+<kw name="Menu.Navigate Menu For Table" library="PageHelper">
+<arg>'Table Pagination'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:16.804" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:16.804" endtime="20220609 16:42:16.804"/>
+</kw>
+<msg timestamp="20220609 16:42:16.804" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:16.804" endtime="20220609 16:42:16.805"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Table'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:42:16.805" endtime="20220609 16:42:18.878"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:16.804" endtime="20220609 16:42:18.879"/>
+</kw>
+<kw name="Close Web Application" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:18.879" endtime="20220609 16:42:18.885"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:18.879" endtime="20220609 16:42:18.885"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:15.242" endtime="20220609 16:42:18.885"/>
+</test>
+<kw name="Quit Opened Browser" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:18.886" endtime="20220609 16:42:19.043"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:18.886" endtime="20220609 16:42:19.043"/>
+</kw>
+<doc>This is first robot test file</doc>
+<status status="PASS" starttime="20220609 16:42:07.679" endtime="20220609 16:42:19.043"/>
+</suite>
+<suite id="s1-s5" name="PagePopupTest" source="/Users/kazi/github/automation-projects/PlaywrightWithRobotFW/Tests/PagePopupTest.robot">
+<kw name="Launch Chromium Browser" library="CommonHelper" type="SETUP">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arg>browser_name=chromium</arg>
+<msg timestamp="20220609 16:42:19.727" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220609 16:42:19.050" endtime="20220609 16:42:19.728"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:19.050" endtime="20220609 16:42:19.735"/>
+</kw>
+<test id="s1-s5-t1" name="Page popup verufy test case" line="14">
+<kw name="Open Web Application" library="CommonHelper" type="SETUP">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:19.737" endtime="20220609 16:42:24.473"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:19.737" endtime="20220609 16:42:24.473"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"This Page Popup Test Case"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:42:24.473" level="INFO">"This Page Popup Test Case"</msg>
+<status status="PASS" starttime="20220609 16:42:24.473" endtime="20220609 16:42:24.474"/>
+</kw>
+<kw name="Menu.Navigate Menu For Alerts" library="PageHelper">
+<arg>'Window Popup Modal'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:24.475" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:24.475" endtime="20220609 16:42:24.475"/>
+</kw>
+<msg timestamp="20220609 16:42:24.475" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:24.474" endtime="20220609 16:42:24.475"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Alerts &amp; Modals'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:42:24.475" endtime="20220609 16:42:26.546"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:24.474" endtime="20220609 16:42:26.547"/>
+</kw>
+<kw name="PagePopup.Verify Page Popup Aceess" library="PageHelper">
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:26.548" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/window-popup-modal-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:26.548" endtime="20220609 16:42:26.548"/>
+</kw>
+<msg timestamp="20220609 16:42:26.548" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/window-popup-modal-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:26.547" endtime="20220609 16:42:26.548"/>
+</kw>
+<kw name="Sign Up Twitter Popup" library="PagePopup">
+<arg>${page}</arg>
+<status status="PASS" starttime="20220609 16:42:26.548" endtime="20220609 16:42:30.716"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:26.547" endtime="20220609 16:42:30.716"/>
+</kw>
+<kw name="Menu.Navigate Menu For Alerts" library="PageHelper">
+<arg>'Window Popup Modal'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:30.718" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:30.718" endtime="20220609 16:42:30.718"/>
+</kw>
+<msg timestamp="20220609 16:42:30.718" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:30.717" endtime="20220609 16:42:30.718"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Alerts &amp; Modals'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:42:30.719" endtime="20220609 16:42:32.827"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:30.717" endtime="20220609 16:42:32.827"/>
+</kw>
+<kw name="Close Web Application" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:32.828" endtime="20220609 16:42:32.838"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:32.828" endtime="20220609 16:42:32.839"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:19.736" endtime="20220609 16:42:32.839"/>
+</test>
+<kw name="Quit Opened Browser" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:32.840" endtime="20220609 16:42:33.020"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:32.839" endtime="20220609 16:42:33.021"/>
+</kw>
+<doc>This is Page Popup Test File</doc>
+<status status="PASS" starttime="20220609 16:42:19.044" endtime="20220609 16:42:33.021"/>
+</suite>
+<suite id="s1-s6" name="TableTest" source="/Users/kazi/github/automation-projects/PlaywrightWithRobotFW/Tests/TableTest.robot">
+<kw name="Launch Chromium Browser" library="CommonHelper" type="SETUP">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arg>browser_name=chromium</arg>
+<msg timestamp="20220609 16:42:33.725" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220609 16:42:33.027" endtime="20220609 16:42:33.725"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:33.027" endtime="20220609 16:42:33.725"/>
+</kw>
+<test id="s1-s6-t1" name="Table Sort Example Test Case" line="14">
+<kw name="Open Web Application" library="CommonHelper" type="SETUP">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:33.726" endtime="20220609 16:42:38.088"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:33.726" endtime="20220609 16:42:38.088"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"This is test for Table sort"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:42:38.089" level="INFO">"This is test for Table sort"</msg>
+<status status="PASS" starttime="20220609 16:42:38.088" endtime="20220609 16:42:38.089"/>
+</kw>
+<kw name="Menu.Navigate Menu For Table" library="PageHelper">
+<arg>'Table Sort &amp; Search'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:38.090" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:38.090" endtime="20220609 16:42:38.090"/>
+</kw>
+<msg timestamp="20220609 16:42:38.090" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:38.089" endtime="20220609 16:42:38.090"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Table'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:42:38.090" endtime="20220609 16:42:40.159"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:38.089" endtime="20220609 16:42:40.159"/>
+</kw>
+<kw name="Table.Get Data From Sorted Column" library="PageHelper">
+<var>@{data}</var>
+<arg>'Age'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:40.161" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/table-sort-search-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:40.161" endtime="20220609 16:42:40.161"/>
+</kw>
+<msg timestamp="20220609 16:42:40.161" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/table-sort-search-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:40.160" endtime="20220609 16:42:40.161"/>
+</kw>
+<kw name="Select Table Entries" library="TableSortSearch">
+<arg>${page}</arg>
+<arg>50</arg>
+<status status="PASS" starttime="20220609 16:42:40.161" endtime="20220609 16:42:41.196"/>
+</kw>
+<kw name="Sort Column" library="TableSortSearch">
+<arg>${page}</arg>
+<arg>${column_name}</arg>
+<status status="PASS" starttime="20220609 16:42:41.196" endtime="20220609 16:42:42.226"/>
+</kw>
+<kw name="Get Sorted Data List" library="TableSortSearch">
+<var>@{data}</var>
+<arg>${page}</arg>
+<msg timestamp="20220609 16:42:42.313" level="INFO">@{data} = [ 19 | 20 | 21 | 22 | 22 | 23 | 23 | 28 | 28 | 30 | 30 | 33 | 35 | 36 | 37 | 39 | 40 | 41 | 42 | 43 | 47 | 48 | 53 | 55 | 59 | 59 | 61 | 61 | 63 | 64 | 66 | 66 ]</msg>
+<status status="PASS" starttime="20220609 16:42:42.227" endtime="20220609 16:42:42.313"/>
+</kw>
+<msg timestamp="20220609 16:42:42.313" level="INFO">@{data} = [ 19 | 20 | 21 | 22 | 22 | 23 | 23 | 28 | 28 | 30 | 30 | 33 | 35 | 36 | 37 | 39 | 40 | 41 | 42 | 43 | 47 | 48 | 53 | 55 | 59 | 59 | 61 | 61 | 63 | 64 | 66 | 66 ]</msg>
+<status status="PASS" starttime="20220609 16:42:40.160" endtime="20220609 16:42:42.313"/>
+</kw>
+<kw name="Is List Sorted" library="CommonHelper">
+<var>${flag}</var>
+<arg>${data}</arg>
+<kw name="Verify List Ascending Order" library="UtilityCore">
+<var>${flag}</var>
+<arg>${list_data}</arg>
+<msg timestamp="20220609 16:42:42.314" level="INFO">${flag} = True</msg>
+<status status="PASS" starttime="20220609 16:42:42.314" endtime="20220609 16:42:42.314"/>
+</kw>
+<msg timestamp="20220609 16:42:42.314" level="INFO">${flag} = True</msg>
+<status status="PASS" starttime="20220609 16:42:42.313" endtime="20220609 16:42:42.314"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${flag}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20220609 16:42:42.314" endtime="20220609 16:42:42.314"/>
+</kw>
+<kw name="Close Web Application" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:42.315" endtime="20220609 16:42:42.322"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:42.315" endtime="20220609 16:42:42.322"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:33.725" endtime="20220609 16:42:42.322"/>
+</test>
+<test id="s1-s6-t2" name="Table Search Example Test Case" line="22">
+<kw name="Open Web Application" library="CommonHelper" type="SETUP">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:42.323" endtime="20220609 16:42:43.814"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:42.323" endtime="20220609 16:42:43.815"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"This is test for Table search"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220609 16:42:43.815" level="INFO">"This is test for Table search"</msg>
+<status status="PASS" starttime="20220609 16:42:43.815" endtime="20220609 16:42:43.815"/>
+</kw>
+<kw name="Menu.Navigate Menu For Table" library="PageHelper">
+<arg>'Table Sort &amp; Search'</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:43.816" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:43.816" endtime="20220609 16:42:43.816"/>
+</kw>
+<msg timestamp="20220609 16:42:43.816" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:43.816" endtime="20220609 16:42:43.816"/>
+</kw>
+<kw name="Navigate Menu Item" library="Menu">
+<arg>${page}</arg>
+<arg>'Table'</arg>
+<arg>${secondary_menu_item_name}</arg>
+<status status="PASS" starttime="20220609 16:42:43.816" endtime="20220609 16:42:45.874"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:43.815" endtime="20220609 16:42:45.875"/>
+</kw>
+<kw name="Table.Search And Get Data From Column" library="PageHelper">
+<var>@{data}</var>
+<arg>London</arg>
+<arg>Office</arg>
+<kw name="Get Page Handle" library="CommonHelper">
+<var>${page}</var>
+<kw name="Get Page Object" library="PlaywrightCore">
+<var>${page_handle}</var>
+<msg timestamp="20220609 16:42:45.876" level="INFO">${page_handle} = &lt;Page url='https://demo.seleniumeasy.com/table-sort-search-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:45.876" endtime="20220609 16:42:45.876"/>
+</kw>
+<msg timestamp="20220609 16:42:45.877" level="INFO">${page} = &lt;Page url='https://demo.seleniumeasy.com/table-sort-search-demo.html'&gt;</msg>
+<status status="PASS" starttime="20220609 16:42:45.876" endtime="20220609 16:42:45.877"/>
+</kw>
+<kw name="Select Table Entries" library="TableSortSearch">
+<arg>${page}</arg>
+<arg>50</arg>
+<status status="PASS" starttime="20220609 16:42:45.877" endtime="20220609 16:42:46.907"/>
+</kw>
+<kw name="Search Table Data" library="TableSortSearch">
+<arg>${page}</arg>
+<arg>${search_data}</arg>
+<status status="PASS" starttime="20220609 16:42:46.908" endtime="20220609 16:42:47.929"/>
+</kw>
+<kw name="Sort Column" library="TableSortSearch">
+<arg>${page}</arg>
+<arg>${column_name}</arg>
+<status status="PASS" starttime="20220609 16:42:47.929" endtime="20220609 16:42:48.976"/>
+</kw>
+<kw name="Get Sorted Data List" library="TableSortSearch">
+<var>@{data}</var>
+<arg>${page}</arg>
+<msg timestamp="20220609 16:42:49.004" level="INFO">@{data} = [ London | London | London | London | London | London | London ]</msg>
+<status status="PASS" starttime="20220609 16:42:48.977" endtime="20220609 16:42:49.005"/>
+</kw>
+<msg timestamp="20220609 16:42:49.005" level="INFO">@{data} = [ London | London | London | London | London | London | London ]</msg>
+<status status="PASS" starttime="20220609 16:42:45.875" endtime="20220609 16:42:49.005"/>
+</kw>
+<kw name="Verify List With Same Values" library="UtilityCore">
+<var>${flag}</var>
+<arg>${data}</arg>
+<msg timestamp="20220609 16:42:49.005" level="INFO">${flag} = True</msg>
+<status status="PASS" starttime="20220609 16:42:49.005" endtime="20220609 16:42:49.005"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${flag}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20220609 16:42:49.005" endtime="20220609 16:42:49.006"/>
+</kw>
+<kw name="Close Web Application" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:49.006" endtime="20220609 16:42:49.010"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:49.006" endtime="20220609 16:42:49.010"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:42.323" endtime="20220609 16:42:49.011"/>
+</test>
+<kw name="Quit Opened Browser" library="CommonHelper" type="TEARDOWN">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220609 16:42:49.011" endtime="20220609 16:42:49.200"/>
+</kw>
+<status status="PASS" starttime="20220609 16:42:49.011" endtime="20220609 16:42:49.200"/>
+</kw>
+<doc>This is Table Test file</doc>
+<status status="PASS" starttime="20220609 16:42:33.022" endtime="20220609 16:42:49.201"/>
+</suite>
+<status status="PASS" starttime="20220609 16:41:24.562" endtime="20220609 16:42:49.203"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest">DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="DialogTest">DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest.DialogTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="DownloadTest">DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest.DownloadTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="DragTest">DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest.DragTest</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s4" name="FirstTest">DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest.FirstTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="PagePopupTest">DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest.PagePopupTest</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s6" name="TableTest">DialogTest &amp; DownloadTest &amp; DragTest &amp; FirstTest &amp; PagePopupTest &amp; TableTest.TableTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
