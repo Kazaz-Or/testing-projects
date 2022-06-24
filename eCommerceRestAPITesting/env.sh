@@ -1,0 +1,9 @@
+
+export MACHINE=machine1
+export WP_HOST=ampps
+
+export WC_KEY=ck_816ff1c30ecdc7d2d68645a23b5d68aaa2481fe0
+export WC_SECRET=cs_3624890398935a054936e002cfab1f40cb631c70
+
+export DB_USER=root
+export DB_PASSWORD=root
