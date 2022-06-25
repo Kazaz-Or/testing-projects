@@ -5,8 +5,6 @@
 <p>While doing some side projects and some tutorials, i uploaded in this repo some of the small projects i implemented while the main goal is continuous learning and improvement</p>
 
 
-[100 Days of Code - The Complete Python Pro Bootcamp for 2022](https://www.udemy.com/course/100-days-of-code).
-
 # What's in this repo:
 
 - [BDD Automation Framework](https://github.com/Kazaz-Or/automation-projects/tree/develop/BDD-Automation) Selenium, & Behave
