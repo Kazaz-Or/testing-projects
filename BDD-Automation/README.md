@@ -3,7 +3,8 @@ In this small project i implemented a POM framework of automation tests on a dem
 Frameworks:
 
 - Selenium
-- Behave library for BDD test framework
+- Behave library for BDD test framework (https://behave.readthedocs.io/en/stable/)
+
 
 Reports & Logging:
 
