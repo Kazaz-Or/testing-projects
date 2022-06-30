@@ -19,7 +19,7 @@
 - [Web app Automation Testing with Selenium (POM)](https://github.com/Kazaz-Or/automation-projects/tree/develop/WebAppTesting): Selenium & Pytest as a testing framework
 - [Rest API Automation Testing for a Wordpress webapp](https://github.com/Kazaz-Or/automation-projects/tree/develop/eCommerceRestAPITesting): Pytest as a testing framework, Docker and MySQL for some manual database tests.
 - [Automation Testing a Django App](https://github.com/Kazaz-Or/automation-projects/tree/develop/DjangoApp-Automation): Pytest as a testing framework using two testing method - pytest-django and a more "generic" api testing with requests library.
-- [Performance Testing with Locust](https://github.com/Kazaz-Or/automation-projects/tree/develop/PerformanceTestingWithLocust: Load testing using Locust, while debugging and visualisation for analysis purposes is done with Influx DB & Grafana
+- [Performance Testing with Locust](https://github.com/Kazaz-Or/automation-projects/tree/develop/PerformanceTestingWithLocust): Load testing using Locust, while debugging and visualisation for analysis purposes is done with Influx DB & Grafana
 
 
 ## Tools, Frameworks & Libraries
