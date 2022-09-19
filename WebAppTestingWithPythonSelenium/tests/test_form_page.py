@@ -1,7 +1,7 @@
 import pytest
 
-from WebAppTesting.common.base import Base
-from WebAppTesting.pages.form import FormPage
+from WebAppTestingWithPythonSelenium.common.base import Base
+from WebAppTestingWithPythonSelenium.pages.form import FormPage
 
 
 @pytest.mark.usefixtures("pre_test")

@@ -6,7 +6,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-import WebAppTesting.utilities.customLogger as logger
+import WebAppTestingWithPythonSelenium.utilities.customLogger as logger
 
 
 class Base:

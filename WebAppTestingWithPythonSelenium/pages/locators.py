@@ -1,6 +1,6 @@
 import allure
 
-from WebAppTesting.common.base import Base
+from WebAppTestingWithPythonSelenium.common.base import Base
 
 
 class LocatorsPage(Base):

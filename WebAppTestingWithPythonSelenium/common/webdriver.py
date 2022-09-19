@@ -1,5 +1,5 @@
 from selenium import webdriver
-import WebAppTesting.utilities.customLogger as logger
+import WebAppTestingWithPythonSelenium.utilities.customLogger as logger
 
 
 class WebDriver:

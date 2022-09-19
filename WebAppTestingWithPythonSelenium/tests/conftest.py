@@ -1,8 +1,8 @@
 import time
 import pytest
 
-from WebAppTesting.common.base import Base
-from WebAppTesting.common.webdriver import WebDriver
+from WebAppTestingWithPythonSelenium.common.base import Base
+from WebAppTestingWithPythonSelenium.common.webdriver import WebDriver
 
 
 @pytest.fixture(scope='class')

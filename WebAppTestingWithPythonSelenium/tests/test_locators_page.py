@@ -1,5 +1,5 @@
 import pytest
-from WebAppTesting.pages.locators import LocatorsPage
+from WebAppTestingWithPythonSelenium.pages.locators import LocatorsPage
 
 
 @pytest.mark.usefixtures("pre_test")
