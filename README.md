@@ -21,6 +21,7 @@
 - [Automation Testing a Django App](https://github.com/Kazaz-Or/automation-projects/tree/develop/DjangoApp-Automation): Pytest as a testing framework using two testing method - pytest-django and a more "generic" api testing with requests library.
 - [Performance Testing with Locust](https://github.com/Kazaz-Or/automation-projects/tree/develop/PerformanceTestingWithLocust): Load testing using Locust, while debugging and visualisation for analysis purposes is done with Influx DB & Grafana
 - [Rest API Testing with Cypress](https://github.com/Kazaz-Or/automation-projects/tree/develop/APITestingUsingCypress): API testing using Cypress for a REST API Server written with express framework.
+- [Visual Testing with Cypress & Happo JS](https://github.com/Kazaz-Or/automation-projects/tree/develop/VisualTestingWithCypress): Testing visual aspects of a web application using cypress & happo js.
 
 
 ## Tools, Frameworks & Libraries
@@ -48,3 +49,4 @@
 - InfluxDB
 - Grafana
 - Cypress
+- Happo
