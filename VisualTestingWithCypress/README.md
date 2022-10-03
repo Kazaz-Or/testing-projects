@@ -12,3 +12,5 @@ npm run test:visual
 
 example of tests results of the home page:
 
+![70661BE7-9215-4C34-A4AD-D1765BB7F875](https://user-images.githubusercontent.com/83350680/193605981-c12e52bd-5c9b-4001-9456-4aaa59806a87.jpeg)
+
