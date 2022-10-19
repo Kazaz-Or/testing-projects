@@ -13,7 +13,7 @@
 - [Python Image Scraper](https://github.com/Kazaz-Or/automation-projects/tree/develop/ImageScraper): Selenium & PIL (Python Image Library)
 - [Automation Tests for Android Mobile Device](https://github.com/Kazaz-Or/automation-projects/tree/develop/MobileAndroidTesting/MobileAndroidTesting): Selenium, Appium and Pytest testing framework
 - [Web App Automation Testing with Playwright and Robot FW](https://github.com/Kazaz-Or/automation-projects/tree/develop/PlaywrightWithRobotFW): Playwright & Robot testing framework
-- [Rest API AUtomation Tests Framework](https://github.com/Kazaz-Or/automation-projects/tree/develop/RestAPIAutomationFW): Docker & Pytest as a testing framework (also some basic handson with openapi)
+- [Rest API Automation Tests Framework](https://github.com/Kazaz-Or/automation-projects/tree/develop/RestAPIAutomationFW): Docker & Pytest as a testing framework (also some basic handson with openapi)
 - [Testing Spreadsheet](https://github.com/Kazaz-Or/automation-projects/tree/develop/TestingSpreadsheet): openpyxl
 - [Basic Unit Tests Framework](https://github.com/Kazaz-Or/automation-projects/tree/develop/UnitTestFrameWork): unittest
 - [Web app Automation Testing with Selenium (POM)](https://github.com/Kazaz-Or/automation-projects/tree/develop/WebAppTestingWithPythonSelenium): Selenium & Pytest as a testing framework
