@@ -37,6 +37,7 @@
 - Pytest
 - unittest
 - Robot Framework
+- Jest
 - Spreadsheet with openpyxl
 - Flask (Flask web service, JWT)
 - PIL (Python Image Library)
