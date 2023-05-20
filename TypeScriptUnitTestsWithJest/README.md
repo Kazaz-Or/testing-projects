@@ -11,6 +11,7 @@ This "project" was done for learning proposes. The application written with Type
 * Testing for Errors
 * Code Coverage
 * Test Doubles (Stubs, Fakes, Mocks, Spies, Mock Modules)
+* Testing Async functions
 
 ## Application Overview
 
