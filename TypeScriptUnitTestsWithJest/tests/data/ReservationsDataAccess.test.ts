@@ -1,4 +1,4 @@
-import { ReservationsDataAccess } from "../../src/data/ReservationsDataAccess"
+import { ReservationsDataAccess } from "../../src/data/ReservationsDataAccess";
 import { DataBase } from '../../src/data/DataBase';
 import * as IdGenerator from '../../src/data/IdGenerator';
 import { Reservation } from "../../src/model/ReservationModel";
