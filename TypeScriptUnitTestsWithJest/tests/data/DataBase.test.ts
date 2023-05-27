@@ -1,4 +1,4 @@
-import { DataBase } from "../../src/data/DataBase"
+import { DataBase } from "../../src/data/DataBase";
 import * as IdGenerator from "../../src/data/IdGenerator";
 
 

@@ -33,3 +33,4 @@ To run the tests, simply run:
 ```bash
 npm test
 ```
+![8A49F4ED-BE6B-4DEE-A861-0D19440B9D0F](https://github.com/Kazaz-Or/testing-projects/assets/83350680/c26cdcb6-8dbb-4a4c-9fb8-7ba7d8c4f50b)
