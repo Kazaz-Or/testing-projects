@@ -1,4 +1,4 @@
-# My Automation Projects
+# My Test Automation Projects
 
 
 <p align="center">
@@ -21,6 +21,7 @@
 - [Performance Testing with Locust](https://github.com/Kazaz-Or/automation-projects/tree/develop/PerformanceTestingWithLocust): Load testing using Locust, while debugging and visualization for analysis purposes is done with Influx DB & Grafana
 - [Rest API Testing with Cypress](https://github.com/Kazaz-Or/automation-projects/tree/develop/APITestingUsingCypress): API testing using Cypress for a REST API Server written with express framework.
 - [Visual Testing with Cypress & Happo JS](https://github.com/Kazaz-Or/automation-projects/tree/develop/VisualTestingWithCypress): Testing visual aspects of a web application using cypress & happo js.
+- [Unit test with Jest & Typescript on Node/React sample apps](https://github.com/Kazaz-Or/testing-projects/tree/develop/TypeScriptUnitTestsWithJest): The applications written with Typescript wasn't the focus of this project, the goal was to learn Jest features for unit testing with NodeJS/React Typescript applications.
 
 
 ## Tools, Frameworks & Libraries
