@@ -26,28 +26,19 @@
 
 ## Tools, Frameworks & Libraries
 
-- Python 3
-- PyCharm, VsCode
-- Python Scripting and Automation (API's & Frontend)
+- Python
 - requests (HTTP, API, REST)
 - SQL (SQLAlchemy, MySQL)
 - Docker
 - Selenium Web Driver
-- Playwright (in Python)
+- Playwright
 - Appium
 - Pytest
 - unittest
 - Robot Framework
 - Jest
-- Spreadsheet with openpyxl
-- Flask (Flask web service, JWT)
-- PIL (Python Image Library)
-- Logging
+- Cypress
 - Allure
 - Behave
-- Django
 - Locust
-- InfluxDB
-- Grafana
-- Cypress
 - Happo
