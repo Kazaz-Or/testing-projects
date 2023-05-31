@@ -1,6 +1,6 @@
 # Jest unit tests using Typescript
 
-This "project" was done for learning proposes. The application written with Typescript wasn't the focus of this project, the goal was to learn Jest features for unit testing with NodeJS Typescript applications.
+This "project" was done for learning proposes. The application written with Typescript wasn't the focus of this project, the goal was to learn Jest features for unit testing with NodeJS/React Typescript applications.
 
 
 ## Jest Features covered:
@@ -13,7 +13,7 @@ This "project" was done for learning proposes. The application written with Type
 * Test Doubles (Stubs, Fakes, Mocks, Spies, Mock Modules)
 * Testing Async functions
 
-## Application Overview
+## Node Application Overview
 
 ### Reservation handler application
 
@@ -22,6 +22,17 @@ This simple app handles reservations for meeting rooms:
 * Users can register with a username and password.
 * Users can login with a user and a password.
 * Logged in users can create, view, update or delete reservations.
+
+
+## React Application Overview
+
+### Simple Login Form
+
+This simple app handles reservations for meeting rooms:
+
+* Async calls
+* User credentials validation
+
 
 ## Getting Started
 
