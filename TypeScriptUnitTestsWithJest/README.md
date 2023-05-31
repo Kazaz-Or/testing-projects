@@ -1,6 +1,6 @@
 # Jest unit tests using Typescript
 
-This "project" was done for learning proposes. The application written with Typescript wasn't the focus of this project, the goal was to learn Jest features for unit testing with NodeJS/React Typescript applications.
+This "project" was done for learning proposes. The applications written with Typescript wasn't the focus of this project, the goal was to learn Jest features for unit testing with NodeJS/React Typescript applications.
 
 
 ## Jest Features covered:
