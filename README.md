@@ -22,7 +22,7 @@
 - [Rest API Testing with Cypress](https://github.com/Kazaz-Or/automation-projects/tree/develop/APITestingUsingCypress): API testing using Cypress for a REST API Server written with express framework.
 - [Visual Testing with Cypress & Happo JS](https://github.com/Kazaz-Or/automation-projects/tree/develop/VisualTestingWithCypress): Testing visual aspects of a web application using cypress & happo js.
 - [Unit test with Jest & Typescript on Node/React sample apps](https://github.com/Kazaz-Or/testing-projects/tree/develop/TypeScriptUnitTestsWithJest): The applications written with Typescript wasn't the focus of this project, the goal was to learn Jest features for unit testing with NodeJS/React Typescript applications.
-
+- [Mocking NodeJS Using Sinon](https://github.com/Kazaz-Or/testing-projects/tree/develop/MockingNodeJSWithSinon): For the sake of learning, this "project" was created to learn how to mock Node JS using Sinon.
 
 ## Tools, Frameworks & Libraries
 
@@ -37,6 +37,7 @@
 - unittest
 - Robot Framework
 - Jest
+- Sinon (using Mocha as test runner, Chai for assertions and Proxyquire for sandboxing).
 - Cypress
 - Allure
 - Behave
